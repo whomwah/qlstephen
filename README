@@ -24,3 +24,7 @@ you will need to create it first:
 2. If you want any user on this machine to use plugin
 
   /Library/QuickLook/
+
+3. To make OS X load the generator, run in the terminal:
+
+  qlmanage -r

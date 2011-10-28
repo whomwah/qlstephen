@@ -3,40 +3,44 @@
 #include <QuickLook/QuickLook.h>
 #import <Foundation/Foundation.h>
 
-/* -----------------------------------------------------------------------------
-   Generate a preview for file
-
-   This function's job is to create preview for designated file
-   ----------------------------------------------------------------------------- */
-
+// Generate a preview for the document with the given url
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, 
                                CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options)
-{	
-	if (QLPreviewRequestIsCancelled(preview))
+{    
+    if (QLPreviewRequestIsCancelled(preview))
         return noErr;
-	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	
-	NSMutableDictionary *props = [[NSMutableDictionary alloc] init];
-	[props setObject:@"UTF-8" forKey:(NSString *)kQLPreviewPropertyTextEncodingNameKey];
-	[props setObject:@"text/plain" forKey:(NSString *)kQLPreviewPropertyMIMETypeKey];
-	[props setObject:[NSNumber numberWithInt:700] forKey:(NSString *)kQLPreviewPropertyWidthKey];
-	[props setObject:[NSNumber numberWithInt:500] forKey:(NSString *)kQLPreviewPropertyHeightKey];
-	
-	NSString *text = [NSString stringWithContentsOfURL:(NSURL *)url
-											  encoding:NSUTF8StringEncoding
-												 error:nil];
-	
-	QLPreviewRequestSetDataRepresentation(
-										  preview,
-										  (CFDataRef)[text dataUsingEncoding:NSUTF8StringEncoding],
-										  kUTTypeHTML,
-										  (CFDictionaryRef)props);
-
-	
-	[pool release];
-	
-	return noErr;
+    
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    
+    NSMutableDictionary *props = [[NSMutableDictionary alloc] init];
+    [props setObject:@"text/plain" forKey:(NSString *)kQLPreviewPropertyMIMETypeKey];
+    [props setObject:[NSNumber numberWithInt:700] forKey:(NSString *)kQLPreviewPropertyWidthKey];
+    [props setObject:[NSNumber numberWithInt:800] forKey:(NSString *)kQLPreviewPropertyHeightKey];
+    
+    NSStringEncoding encodingUsed;
+    NSString *text = [NSString stringWithContentsOfURL:(NSURL *)url
+                                          usedEncoding:&encodingUsed 
+                                                 error:nil];
+    
+    // If the encoding could not be determined using usedEncoding, try Latin1
+    if (text == nil)
+    {
+        text = [NSString stringWithContentsOfURL:(NSURL *)url
+                                        encoding:NSISOLatin1StringEncoding 
+                                           error:nil];
+        encodingUsed = NSISOLatin1StringEncoding;
+    }
+    
+    QLPreviewRequestSetDataRepresentation(
+                                          preview,
+                                          (CFDataRef)[text dataUsingEncoding:encodingUsed],
+                                          kUTTypeHTML,
+                                          (CFDictionaryRef)props);
+    
+    
+    [pool release];
+    
+    return noErr;
 }
 
 void CancelPreviewGeneration(void* thisInterface, QLPreviewRequestRef preview)

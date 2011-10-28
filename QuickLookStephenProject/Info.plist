@@ -60,7 +60,7 @@
 	<key>QLPreviewWidth</key>
 	<real>800</real>
 	<key>QLSupportsConcurrentRequests</key>
-	<false/>
+	<true/>
 	<key>QLThumbnailMinimumSize</key>
 	<real>17</real>
 </dict>

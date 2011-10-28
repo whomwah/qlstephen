@@ -25,12 +25,6 @@ you will need to create it first:
 
   /Library/QuickLook/
 
+3. To make OS X load the generator, run in the terminal:
 
-Restart
-=======
-
-I have found that in OSX Lion that I had to run:
-
-    qlmanage -r
-
-in order for the plugin to get seen
+  qlmanage -r

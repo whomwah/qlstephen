@@ -11,11 +11,11 @@ a file extension. Files like:
 
 ## Download
 
-You can download the lastest version from the Download section in the QLStephen github reposistory. Or you can just complile it yourself.
+You can download the lastest version from the [Downloads section](https://github.com/whomwah/qlstephen/downloads) in the QLStephen github reposistory. Or you can just complile it yourself.
 
 ## Install
 
-If you download the plugin via the downloads section in github for this project, you install via the installer pkg included. If you're compliling the project yourself, you just copy the QLStephen.qlgenerator file into the relevant QuickLook folder. If the folder is not present, then you will need to create it first:
+If you download the plugin via the [Downloads section](https://github.com/whomwah/qlstephen/downloads) in github for this project, you install via the installer pkg included. If you're compliling the project yourself, you just copy the QLStephen.qlgenerator file into the relevant QuickLook folder. If the folder is not present, then you will need to create it first:
 
 1. If just you want to use this plugin
 

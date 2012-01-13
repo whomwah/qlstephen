@@ -34,7 +34,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
     QLPreviewRequestSetDataRepresentation(
                                           preview,
                                           (CFDataRef)[text dataUsingEncoding:encodingUsed],
-                                          kUTTypeHTML,
+                                          kUTTypePlainText,
                                           (CFDictionaryRef)props);
     
     

@@ -15,7 +15,13 @@ You can download the lastest version from the [Downloads section](https://github
 
 ## Install
 
-If you download the plugin via the [Downloads section](https://github.com/whomwah/qlstephen/downloads) in github for this project, you install via the installer pkg included. If you're compliling the project yourself, you just copy the QLStephen.qlgenerator file into the relevant QuickLook folder. If the folder is not present, then you will need to create it first:
+### Pre-compiled
+
+If you download the plugin via the [Downloads section](https://github.com/whomwah/qlstephen/downloads) in github for this project, you install via the installer pkg included.
+
+### Manually Compile
+
+If you're compliling the project yourself, you just copy the QLStephen.qlgenerator file into the relevant QuickLook folder. If the folder is not present, then you will need to create it first:
 
 1. If just you want to use this plugin
 

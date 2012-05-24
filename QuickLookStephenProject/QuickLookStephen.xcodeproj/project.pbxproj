@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2C05A19C06CAA52B00D84F6F /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */; };
+		4F98DDDF156E04F500C17A7F /* URLChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F98DDDD156E04F500C17A7F /* URLChecker.h */; };
+		4F98DDE0156E04F500C17A7F /* URLChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F98DDDE156E04F500C17A7F /* URLChecker.m */; };
+		4F98DDE3156E0C9F00C17A7F /* QLStephenWhiteList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F98DDE2156E0C9F00C17A7F /* QLStephenWhiteList.plist */; };
+		4F98DDE5156E0CB500C17A7F /* QLStephenExtensionsBlackList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F98DDE4156E0CB500C17A7F /* QLStephenExtensionsBlackList.plist */; };
+		4F98DDE7156E0F0A00C17A7F /* QLStephenDirectoriesBlackList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F98DDE6156E0F0A00C17A7F /* QLStephenDirectoriesBlackList.plist */; };
 		61E3BCFB0870B4F2002186A0 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.m */; };
 		8D576312048677EA00EA77CD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B6FE84183AC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
@@ -37,6 +42,11 @@
 		08FB77B6FE84183AC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		4F98DDDD156E04F500C17A7F /* URLChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLChecker.h; sourceTree = "<group>"; };
+		4F98DDDE156E04F500C17A7F /* URLChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLChecker.m; sourceTree = "<group>"; };
+		4F98DDE2156E0C9F00C17A7F /* QLStephenWhiteList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QLStephenWhiteList.plist; sourceTree = "<group>"; };
+		4F98DDE4156E0CB500C17A7F /* QLStephenExtensionsBlackList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QLStephenExtensionsBlackList.plist; sourceTree = "<group>"; };
+		4F98DDE6156E0F0A00C17A7F /* QLStephenDirectoriesBlackList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QLStephenDirectoriesBlackList.plist; sourceTree = "<group>"; };
 		61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 		8D576316048677EA00EA77CD /* QLStephen.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLStephen.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +109,11 @@
 			children = (
 				61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.m */,
 				2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */,
+				4F98DDDD156E04F500C17A7F /* URLChecker.h */,
+				4F98DDDE156E04F500C17A7F /* URLChecker.m */,
+				4F98DDE2156E0C9F00C17A7F /* QLStephenWhiteList.plist */,
+				4F98DDE4156E0CB500C17A7F /* QLStephenExtensionsBlackList.plist */,
+				4F98DDE6156E0F0A00C17A7F /* QLStephenDirectoriesBlackList.plist */,
 				08FB77B6FE84183AC02AAC07 /* main.c */,
 			);
 			name = Source;
@@ -119,6 +134,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F98DDDF156E04F500C17A7F /* URLChecker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +192,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */,
+				4F98DDE3156E0C9F00C17A7F /* QLStephenWhiteList.plist in Resources */,
+				4F98DDE5156E0CB500C17A7F /* QLStephenExtensionsBlackList.plist in Resources */,
+				4F98DDE7156E0F0A00C17A7F /* QLStephenDirectoriesBlackList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +218,7 @@
 				8D576312048677EA00EA77CD /* main.c in Sources */,
 				2C05A19C06CAA52B00D84F6F /* GeneratePreviewForURL.m in Sources */,
 				61E3BCFB0870B4F2002186A0 /* GenerateThumbnailForURL.m in Sources */,
+				4F98DDE0156E04F500C17A7F /* URLChecker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

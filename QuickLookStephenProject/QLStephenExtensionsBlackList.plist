@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>lib</string>
+	<string>dll</string>
+	<string>a</string>
+	<string>o</string>
+	<string>dmg</string>
+	<string>zip</string>
+	<string>rar</string>
+	<string>tar</string>
+	<string>tgz</string>
+	<string>gz</string>
+	<string>tbz</string>
+	<string>bz2</string>
+	<string>taz</string>
+	<string>z</string>
+	<string>tlz</string>
+	<string>lz</string>
+	<string>txz</string>
+	<string>xz</string>
+	<string>gzip</string>
+</array>
+</plist>

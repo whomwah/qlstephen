@@ -3,6 +3,8 @@
 #include <QuickLook/QuickLook.h>
 #import <Foundation/Foundation.h>
 
+#import "URLChecker.h"
+
 // Generate a preview for the document with the given url
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, 
                                CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options)
@@ -10,6 +12,10 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
     if (QLPreviewRequestIsCancelled(preview))
         return noErr;
     
+	CFBundleRef bundle = QLPreviewRequestGetGeneratorBundle(preview);
+	if (!shouldProcessItem(url, bundle))
+		return noErr;
+
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     
     NSMutableDictionary *props = [[NSMutableDictionary alloc] init];

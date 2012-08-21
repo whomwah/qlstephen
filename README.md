@@ -22,13 +22,9 @@ If you're compliling the project yourself, you just copy the generated QLStephen
 
 ## Customizing white/black lists - Step by Step
 
-This plugin uses plist files to determine which files are previewable:
-
-* QLStephenWhiteList.plist : files with these names will be ALWAYS previewed
-* QLStephenExtensionsBlackList.plist : files with these extensions will NOT be previewed
-* QLStephenDirectoriesBlackList.plist : files contained in directories with these names will NOT be previewed
-
 If you wish to change the current behavour, you will need to follow the instructions below:
+
+Plists used here are not same as user defaults so you won't find in ~/Library/Preferences. Instead you need to edit the plist files inside the bundle (in this case it is the plugin file: QLStepehen.qlgenerator).
 
 #### 1. Show the contents of the bundle.
 
@@ -42,9 +38,9 @@ If you the plugin installed then it should be in `~/Library/QuickLook/` director
 
 If you don't know which one :
 
-**QLStephenWhiteList.plist** : files with these names will be ALWAYS previewed
-**QLStephenExtensionsBlackList.plist** : files with these extensions will NOT be previewed
-**QLStephenDirectoriesBlackList.plist** : files contained in directories with these names will NOT be previewed
+* **QLStephenWhiteList.plist** : files with these names will be ALWAYS previewed
+* **QLStephenExtensionsBlackList.plist** : files with these extensions will NOT be previewed
+* **QLStephenDirectoriesBlackList.plist** : files contained in directories with these names will NOT be previewed
 
 ## Trouble?
 

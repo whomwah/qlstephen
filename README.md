@@ -14,7 +14,7 @@ You can also customise the plugin to determine which files it previews. See Cust
 
 ### Pre-compiled
 
-Download the latest plugin via the [Downloads section](https://github.com/downloads/whomwah/qlstephen/QLStephen.qlgenerator.zip). Unzip and copy the file into your /Library/QuickLook or ~/Library/QuickLook folder. You may have to create the QuickLook folder if it doesn't exist.
+[Download the latest version of the QuickLookStephen plugin](https://github.com/downloads/whomwah/qlstephen/QLStephen.qlgenerator.zip). Unzip and copy the file into your /Library/QuickLook or ~/Library/QuickLook folder. You may have to create the QuickLook folder if it doesn't exist.
 
 ### Manually Compile
 

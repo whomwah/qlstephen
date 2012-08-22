@@ -1,0 +1,540 @@
+/*
+Theme Name: whomwah 
+Theme URI: http://whomwah.com/
+Description: A simple web layout as seen on whomwah.com.
+Version: 1.0
+Author: Duncan Robertson
+Author URI: http://whomwah.com/
+Tags: blue, simple, fixed width, one column, widgets
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+/* 
+-----------------------------------------------
+Reset Stylesheet
+Author: Eric Meyer
+ 
+Taken from:
+http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+----------------------------------------------- */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+:focus {
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ol, ul {
+  list-style: none;
+}
+ 
+ 
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+ 
+/* end of reset */
+
+/* Clearing Hack (http://www.positioniseverything.net/easyclearing.html)
+----------------------------------------------- */
+.cm:after
+{
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.cm {display: inline-table;}
+/* Hides from IE-mac \*/
+* html .cm {height: 1%;}
+.cm {display: block;}
+/* End hide from IE-mac */
+
+/* end of clearing hack */
+
+
+body {
+  font: 62.5% Georgia, serif;
+  color: #333;
+  min-width: 760px;
+  text-align: center;
+}
+
+blockquote {
+  font-size: 0.9em;
+  margin: 1em 3em;
+  color: #999;
+  border-left: 2px solid #999;
+  padding-left: 0.4em; 
+}
+
+object {
+  padding: 10px 0;
+}
+
+pre {
+  padding: 5px;
+  font-family: "bitstream", monaco, "lucida console", "courier new", courier, serif !important;
+  font-size: 12px;
+}
+
+p {
+  margin-bottom: 0.4em;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: #06C;
+  background-color: rgba(255,246,224,0.0);  
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  transition-property: color;
+   -o-transition-duration: 0.4s;
+   -webkit-transition-duration: 0.4s;
+   -moz-transition-duration: 0.4s;
+   transition-duration: 0.4s;
+}
+a:hover,
+a:focus {
+  color: #313192;
+}
+a:visited {
+  background: none;
+  font-weight: normal;
+}
+
+hr { display: none; }
+
+h2, h3, #archive form label {
+  font-size: 1.4em;
+  margin-bottom: 0em;
+  color: #000;
+}
+
+#header {
+  padding-top: 0.7em;
+  margin-bottom: 1.7em;
+  font-size: 1.7em;
+  text-align: center;
+  color: #000;
+}
+
+#header h1 {
+  font-size: 2.5em;  
+  margin-bottom: 0.1em;
+}
+
+#header h1 a {
+  color: #06C;
+}
+
+#content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 64em;
+  text-align: left;
+  border-bottom: 3px solid #ccc;
+}
+
+#accessible-top, #accessible-bottom {
+  font-family: Helvetica, Arial;
+}
+
+#accessible-top a, #accessible-bottom a { 
+  display: block;
+  padding: 0.4em;
+  background: #ccc;  
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+#accessible-top a { 
+  border-bottom: 3px solid #eee;
+}
+
+#accessible-top a:hover, #accessible-bottom a:hover { 
+  background: #333;  
+}
+
+#accessible-top a:hover { 
+  border-bottom: 3px solid #666;
+}
+
+#promos {
+  margin-bottom:3em;
+  padding-left:8em;
+}
+
+#promos li {
+  display:block;
+  float:left;
+}
+
+.promo {
+  text-align: center;
+  margin-right:3em;
+}
+
+.promo img {
+  border:1px solid #ccc;
+  padding:2px;
+}
+
+.promo img:hover {
+  border:1px solid #06C;
+}
+
+.promo .caption {
+  display: block;
+  position: relative;
+  bottom: -0.5em;
+  font-size: 1.2em;
+}
+
+.status_code {
+  color: red;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.post {
+  font-size: 1.6em;
+  line-height: 1.4em;
+  margin-bottom: 2em;
+}
+
+.post h3 {
+  font-size: 1.2em;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.post .hint, .post .update, .post .note {
+  font-size: 0.9em;
+  color: #000;
+}
+
+.post small, small.commentmetadata {
+  font-size: 0.8em;
+  font-style: italic;
+  color: #666;
+}
+
+h2.pagetitle {
+  font-size: 1.4em;
+  margin-bottom: 0em;
+  color: #000;
+  border-bottom: 3px solid #ccc;
+  margin-bottom: 1em;
+  padding-bottom: 0.4em;
+}
+
+small span {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.post .entry {
+  padding-top: 0.6em;
+}
+
+.post .postmetadata {
+  font-size: 0.8em;
+}
+
+.post .postmetadata a {
+  text-transform: lowercase;
+}
+
+.post .altpostmetadata {
+  padding-top: 1em;
+  line-height: 1.3em; 
+}
+
+.post ul, .post ol {
+  margin-left: 2em;
+  padding: 0.3em 1em 1em 1em;
+}
+
+.post ul {
+  list-style: circle;
+}
+
+.post ol {
+  list-style: decimal;
+}
+
+.post .entry img {
+  padding: 1em;
+}
+
+.post .caption {
+  display: block;
+  position: relative;
+  left: 1.4em;
+  bottom: 1em;
+  font-size: 0.8em;
+}
+
+div.navigation {
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+div.navigation a {
+  color: #06C;
+}
+
+div.navigation .alignleft {
+  float: left;
+}
+
+div.navigation .alignright {
+  text-align: right;
+}
+
+/* style the extras */
+
+#extras {
+  font-size: 1.2em;
+  border-top: 3px solid #ccc;
+  padding: 3em 0;
+}
+
+#extras ul ul, #search div {
+  margin-bottom: 0.7em;
+}
+
+#extras #search #s {
+  width: 30em;
+}
+
+#extras ul ul {
+  float:left;
+}
+
+#extras ul li {
+  clear: left;
+}
+
+#extras ul li h2, #search label {
+  font-size: 1.2em;
+  color: #000;
+  margin-bottom: 0.3em;
+}
+
+#search label {
+  display:block;
+}
+
+#extras ul li ul li {
+  display: block;
+  margin-right: 0.5em;
+  margin-bottom: 0.2em;
+  clear: none;
+  float: left;
+}
+
+#footer {
+  clear: both;
+  padding: 1em 0;
+}
+
+#footer p {
+  margin-bottom: 0.3em;
+}
+
+#comments {
+  font-size: 1.8em;
+  color: #000;
+  margin-bottom: 1.2em;
+}
+
+ol.commentlist {
+  font-size: 1.4em;
+  color:#333;
+}
+
+ol.commentlist li {
+  display: block;
+  margin-bottom: 1.4em;
+}
+
+ol.commentlist li cite {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+ol.commentlist li img {
+  position: relative;
+  top: 1px;
+  margin-right: 0.4em;
+}
+
+
+ol.commentlist li p {
+  padding-top: 0.4em;
+  line-height: 1.4em;
+}
+
+.commentmetadata {
+  color:#ccc;
+}
+.commentmetadata span {
+  font-size: 1.4em;
+}
+
+#respond {
+  border-top: 3px solid #ccc;
+  padding-top: 1.2em;
+  font-size: 1.6em;
+  color: #000;
+  margin-bottom: 1.2em;
+}
+
+form#commentform {
+  margin-bottom:2.8em;
+}
+
+form#commentform p {
+  font-size: 1.4em;
+  margin-bottom:0.8em;
+}
+
+form#commentform label {
+  font-size: 0.9em;
+}
+
+form#commentform label span {
+  font-size: 0.9em;
+  color: #000;
+}
+
+form#commentform textarea {
+  width: 400px;
+}
+
+input#cname, input#openid_url, input#cemail, input#curl, textarea#ccomment  {
+  margin-right: 0.5em;
+}
+
+label.error {
+  font-style: italic;
+  color: red;
+}
+
+#tags_allowed small {
+  font-style: italic;
+}
+
+#tags_allowed code {
+  padding-top: 0.4em;
+  display: block;
+  font-style: normal;
+  font-size: 0.8em;
+  font-family: "bitstream", monaco, "lucida console", "courier new", courier, serif !important;
+}
+
+#archive {
+  font-size: 1.4em;
+}
+
+#archive li {
+  display: block;
+  float:left;
+  margin-bottom: 0.5em;
+  margin-right: 0.3em;
+}
+
+#archive form {
+  margin-bottom: 1.2em;
+}
+
+#archive h2, #archive form label {
+  display: block;
+  margin-bottom: 0.4em;
+}
+
+
+.related_posts {
+  padding-top:1em;
+}
+
+.related_posts h3 {
+  font-size: 1em;
+  margin-bottom: 0em;
+}
+
+.related_posts li {
+  font-size: 0.8em;
+}
+
+img.rss-icon {
+  position: relative;
+  left:-2px;
+}
+
+p.valid{
+  padding:0.6em 0 0; 
+}
+
+.post form p br {
+  display:none;
+}

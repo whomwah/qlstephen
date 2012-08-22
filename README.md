@@ -49,6 +49,10 @@ If you have installed the plugin (by placing it in `~/Library/QuickLook/`) and c
 - Make sure you are editing the correct plist of the correct bundle (It could happen you have two QLStephen plugins and the one read is in another directory like `/Library/QuickLook/`, etc.
 - Run `qlmanage -r` in the Terminal, it will reset QuickLook so plugins will be reloaded.
 
+## Why QLStephen?
+
+Because I was listening to [Adam and Joe](http://www.bbc.co.uk/blogs/adamandjoe/2009/06/test-1.shtml) when I first wrote it.
+
 ## Authors
 
 Original author: Duncan Robertson

@@ -83,6 +83,7 @@ Special thanks to the following people for submitting patches:
 * [Guillermo Ignacio Enriquez Gutierrez](https://github.com/nacho4d)
 * [Rob Lourens](https://github.com/roblourens)
 * [Avi Flax](https://github.com/aviflax)
+* [Tony] (https://github.com/Zearin)
 
 
 ## Contributing

@@ -13,6 +13,16 @@ You can also customise the plugin to determine which files it previews. See [*Cu
 
 ## Installation
 
+
+### Pre-compiled
+
+* [Download the latest version of QuickLookStephen](
+  https://github.com/whomwah/qlstephen/blob/master/QLStephen.qlgenerator.1.4.zip?raw=true)
+* Unzip
+* Copy the file into `/Library/QuickLook` or `~/Library/QuickLook`
+  (You can create the `QuickLook` folder if it doesn’t exist)
+
+
 ### Manually Compiled
 
 Compliling the project yourself? Just copy the generated `QLStephen.qlgenerator`

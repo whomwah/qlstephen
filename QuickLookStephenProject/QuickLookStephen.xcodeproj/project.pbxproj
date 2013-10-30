@@ -162,7 +162,7 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = 2CA326220896AD4900168862 /* Build configuration list for PBXProject "QuickLookStephen" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -221,7 +221,6 @@
 		2CA3261F0896AD4900168862 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -239,7 +238,6 @@
 		2CA326200896AD4900168862 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -255,7 +253,6 @@
 		2CA326230896AD4900168862 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = "RKL_PREPEND_TO_METHODS=rkl_";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -275,7 +272,6 @@
 		2CA326240896AD4900168862 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = "RKL_PREPEND_TO_METHODS=rkl_";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

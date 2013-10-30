@@ -6,7 +6,12 @@
 	<string>CHANGELOG</string>
 	<string>INSTALL</string>
 	<string>CONFIGURE</string>
+  <string>LICENSE</string>
 	<string>THANKS</string>
-	<string>CapFile</string>
+	<string>Capfile</string>
+  <string>Guardfile</string>
+  <string>Procfile</string>
+  <string>Rakefile</string>
+  <string>Gemfile</string>
 </array>
 </plist>

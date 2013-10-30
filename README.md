@@ -4,7 +4,7 @@ QLStephen is a QuickLook plugin that lets you view plain text files without a fi
 
     README
     INSTALL
-    CapFile
+    Capfile
     CHANGELOG
     etc...
 

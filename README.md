@@ -1,4 +1,4 @@
-## UPDATE
+## !! UPDATE !!
 
 Hi all. I'm afriad I don't have time to maintain this project any more. I see the issues mounting but I don't have time to answer them. This was a pet project some time ago and I still use the plugin daily and it works just fine for me in it's current form. If anyone would like to step forward and be added a contributor to move it forward, please send me a message.
 

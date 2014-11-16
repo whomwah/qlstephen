@@ -32,6 +32,16 @@ Compliling the project yourself? Just copy the generated `QLStephen.qlgenerator`
 file into the relevant `QuickLook` folder (as above).
 
 
+## Settings
+
+### Maximum file size
+
+To keep quickview fast the priview is limited in its number of shown bytes.
+The default value is 100kB.
+
+	defaults write com.whomwah.quicklookstephen maxFileSize 102400
+
+
 ## Trouble?
 
 If you’ve installed the plugin, but don’t see any changes:

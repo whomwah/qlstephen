@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0107ABFF15C76F2900C65F1A /* QLSFileAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0107ABFD15C76F2900C65F1A /* QLSFileAttributes.m */; };
-		0149EB3B15F2E8E4003AB298 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149EB3915F2E8E4003AB298 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -Xanalyzer -analyzer-disable-checker -w"; }; };
+		0149EB3B15F2E8E4003AB298 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149EB3915F2E8E4003AB298 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0149EB3E15F2E9A3003AB298 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0149EB3D15F2E9A3003AB298 /* libicucore.dylib */; };
 		2C05A19C06CAA52B00D84F6F /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */; };
 		61E3BCFB0870B4F2002186A0 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.m */; };

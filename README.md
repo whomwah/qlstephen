@@ -4,6 +4,11 @@ Hi all. I'm afriad I don't have time to maintain this project any more. I see th
 
 Duncan
 
+## Reinforcement have arrived :-)
+
+I have volunteered to bring Duncan's excellent QL plugin a bit more up to date. Don't expect to much though. I will focus on backlogged pull requests to begin with.
+
+Tomas
 
 # QuicklookStephen
 

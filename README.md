@@ -34,7 +34,7 @@ file into the relevant `QuickLook` folder (as above).
 ### Maximum file size
 
 To keep quickview fast the priview is limited in its number of shown bytes.
-The default value is 100kB.
+The default value is 100kB. You can change this using the shell to set your own max size.
 
 	defaults write com.whomwah.quicklookstephen maxFileSize 102400
 

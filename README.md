@@ -8,8 +8,12 @@ QLStephen is a QuickLook plugin that lets you view plain text files without a fi
     CHANGELOG
     etc...
 
+
 ## Installation
 
+### Homebrew
+
+    brew install qlstephen
 
 ### Pre-compiled
 

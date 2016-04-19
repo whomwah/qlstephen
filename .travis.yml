@@ -1,0 +1,3 @@
+language: objective-c
+xcode_project: QuickLookStephenProject/QuickLookStephen.xcodeproj
+xcode_scheme: QuickLookStephen

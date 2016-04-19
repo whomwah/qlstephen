@@ -21,6 +21,11 @@
 
 + (instancetype)attributesForItemAtURL:(NSURL *)aURL
 {
+  if ([aURL.lastPathComponent isEqualToString:@".DS_Store"]) {
+    NSLog(@"Ignore the .DS_Store file.");
+    return nil;
+  }
+    
   NSString *magicString = [self magicStringForItemAtURL:aURL];
   if (!magicString) return nil;
 

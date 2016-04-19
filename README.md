@@ -1,15 +1,3 @@
-## !! UPDATE !!
-
-Hi all. I'm afraid I don't have time to maintain this project any more. I see the issues mounting but I don't have time to answer them. This was a pet project some time ago and I still use the plugin daily and it works just fine for me in it's current form. If anyone would like to step forward and be added a contributor to move it forward, please send me a message.
-
-Duncan
-
-## Reinforcement have arrived :-)
-
-I have volunteered to bring Duncan's excellent QL plugin a bit more up to date. Don't expect to much though. I will focus on backlogged pull requests to begin with.
-
-Tomas
-
 # QuicklookStephen
 
 QLStephen is a QuickLook plugin that lets you view plain text files without a file extension. Files like:

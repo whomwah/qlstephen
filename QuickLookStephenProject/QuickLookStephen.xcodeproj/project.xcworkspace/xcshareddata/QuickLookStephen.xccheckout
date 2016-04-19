@@ -10,29 +10,29 @@
 	<string>QuickLookStephen</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>EFB51EB7-D9E4-4D4A-958E-33E5A56415A8</key>
-		<string>github:whomwah/qlstephen.git</string>
+		<key>82739C17F079B7465DB1864EAF6E1560CDFD1296</key>
+		<string>https://github.com/regexident/qlstephen.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>QuickLookStephenProject/QuickLookStephen.xcodeproj/project.xcworkspace</string>
+	<string>QuickLookStephenProject/QuickLookStephen.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>EFB51EB7-D9E4-4D4A-958E-33E5A56415A8</key>
+		<key>82739C17F079B7465DB1864EAF6E1560CDFD1296</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github:whomwah/qlstephen.git</string>
+	<string>https://github.com/regexident/qlstephen.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EFB51EB7-D9E4-4D4A-958E-33E5A56415A8</string>
+	<string>82739C17F079B7465DB1864EAF6E1560CDFD1296</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EFB51EB7-D9E4-4D4A-958E-33E5A56415A8</string>
+			<string>82739C17F079B7465DB1864EAF6E1560CDFD1296</string>
 			<key>IDESourceControlWCCName</key>
 			<string>qlstephen</string>
 		</dict>

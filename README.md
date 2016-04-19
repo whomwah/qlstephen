@@ -25,8 +25,7 @@ QLStephen is a QuickLook plugin that lets you view plain text files without a fi
 
 ### Manually Compiled
 
-Compiling the project yourself? Just copy the generated `QLStephen.qlgenerator`
-file into the relevant `QuickLook` folder (as above).
+Compiling the project yourself? The build process will copy the file into ~/Library/QuickLook.
 
 
 ## Settings

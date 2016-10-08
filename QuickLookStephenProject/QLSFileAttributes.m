@@ -24,7 +24,8 @@
     return nil;
   }
 
-  NSString *magicString = [self magicStringForItemAtURL:aURL];
+  NSString *magicString = [self magicStringForItemAtURL:aURL usingLcALL:@"en_US.UTF-8"];
+  if (!magicString) magicString = [self magicStringForItemAtURL:aURL usingLcALL:@"C"];
   if (!magicString) return nil;
   NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"(\\S+/\\S+); charset=(\\S+)" options:0 error:nil];
   NSTextCheckingResult *match = [regex firstMatchInString:magicString options:0 range:NSMakeRange(0, magicString.length)];
@@ -52,13 +53,13 @@
 // Private Methods
 ////////////////////////////////////////////////////////////////////////////////
 
-+ (NSString *)magicStringForItemAtURL:(NSURL *)aURL {
++ (NSString *)magicStringForItemAtURL:(NSURL *)aURL usingLcALL:(NSString *)lcALL {
   NSString *path = [aURL path];
   NSParameterAssert(path);
 
   NSMutableDictionary *environment =
       [NSProcessInfo.processInfo.environment mutableCopy];
-  environment[@"LC_ALL"] = @"en_US.UTF-8";
+  environment[@"LC_ALL"] = lcALL;
 
   NSTask *task = [NSTask new];
   task.launchPath = @"/usr/bin/file";

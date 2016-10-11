@@ -32,9 +32,9 @@
 	<key>CFBundleName</key>
 	<string>QLStephen</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.43</string>
+	<string>1.44</string>
 	<key>CFBundleVersion</key>
-	<string>1.4.3</string>
+	<string>1.4.4</string>
 	<key>CFPlugInDynamicRegisterFunction</key>
 	<string></string>
 	<key>CFPlugInDynamicRegistration</key>

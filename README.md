@@ -1,5 +1,7 @@
 # QuicklookStephen
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 QLStephen is a QuickLook plugin that lets you view plain text files without a file extension. Files like:
 
     README

@@ -50,6 +50,7 @@ If you’ve installed the plugin, but don’t see any changes:
    another directory—perhaps `/Library/QuickLook/`—is what is being read.)
 - Run `qlmanage -r` in the Terminal. (This will restart QuickLook, which reloads all plugins.)
 
+If you want to preview some text files that _do_ have extensions (e.g., `*.txt`), follow [these instructions](https://github.com/whomwah/qlstephen/issues/23).
 
 ## Why “QLStephen”?
 

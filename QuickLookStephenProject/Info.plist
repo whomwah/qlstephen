@@ -13,7 +13,35 @@
 			<string>QLGenerator</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>public.data</string>
+				<string>public.unix-executable</string>
+			</array>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>XML</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>com.apple.xcode.strings-text</string>
+			<key>CFBundleTypeRole</key>
+			<string>QLGenerator</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.apple.xcode.strings-text</string>
+			</array>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>XML</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>public.unix-executable</string>
+			<key>CFBundleTypeRole</key>
+			<string>QLGenerator</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>public.unix-executable</string>
 			</array>
 			<key>LSTypeIsPackage</key>
 			<false/>
@@ -32,9 +60,9 @@
 	<key>CFBundleName</key>
 	<string>QLStephen</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.44</string>
+	<string>1.45</string>
 	<key>CFBundleVersion</key>
-	<string>1.4.4</string>
+	<string>1.4.5</string>
 	<key>CFPlugInDynamicRegisterFunction</key>
 	<string></string>
 	<key>CFPlugInDynamicRegistration</key>

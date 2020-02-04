@@ -36,7 +36,7 @@ Compiling the project yourself? Run:
 
 ### Maximum file size
 
-To keep quickview fast the priview is limited in its number of shown bytes.
+To keep quickview fast the preview is limited in its number of shown bytes.
 The default value is 100kB. You can change this using the shell to set your own max size.
 
     defaults write com.whomwah.quicklookstephen maxFileSize 102400

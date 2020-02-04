@@ -47,7 +47,7 @@ If you’ve installed the plugin, but don’t see any changes:
 
 - Make sure you are editing (a) the correct plist of (b) the correct bundle.
   (For example, you might have two `QLStephen` plugins. It’s possible the plugin in
-   another directory—perhaps `/Library/QuickLook/`—is what is being read.)
+   another directory —perhaps `/Library/QuickLook/`— is what is being read.)
 - Run `qlmanage -r` in the Terminal. (This will restart QuickLook, which reloads all plugins.)
 
 If you want to preview some text files that _do_ have extensions (e.g., `*.txt`), follow [these instructions](https://github.com/whomwah/qlstephen/issues/23).

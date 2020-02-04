@@ -33,9 +33,9 @@
 	<key>CFBundleName</key>
 	<string>QLStephen</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.45</string>
+	<string>1.5.0</string>
 	<key>CFBundleVersion</key>
-	<string>1.4.5</string>
+	<string>1.5.0</string>
 	<key>CFPlugInDynamicRegisterFunction</key>
 	<string></string>
 	<key>CFPlugInDynamicRegistration</key>

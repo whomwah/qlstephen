@@ -10,7 +10,6 @@
 		0107ABFF15C76F2900C65F1A /* QLSFileAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0107ABFD15C76F2900C65F1A /* QLSFileAttributes.m */; };
 		0149EB3E15F2E9A3003AB298 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0149EB3D15F2E9A3003AB298 /* libicucore.dylib */; };
 		2C05A19C06CAA52B00D84F6F /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */; };
-		3B177A15234CD56200AA1345 /* QLStephen.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D576316048677EA00EA77CD /* QLStephen.qlgenerator */; };
 		61E3BCFB0870B4F2002186A0 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.m */; };
 		8D576312048677EA00EA77CD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B6FE84183AC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
@@ -124,7 +123,6 @@
 			dependencies = (
 			);
 			name = QuickLookStephen;
-			productInstallPath = /Library/QuickLook;
 			productName = QuickLookStephen;
 			productReference = 8D576316048677EA00EA77CD /* QLStephen.qlgenerator */;
 			productType = "com.apple.product-type.bundle";
@@ -203,7 +201,6 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_BUNDLE_IDENTIFIER = com.whomwah.quicklookstephen;
 				PRODUCT_NAME = QLStephen;
 				USER_HEADER_SEARCH_PATHS = No;
@@ -222,7 +219,6 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_BUNDLE_IDENTIFIER = com.whomwah.quicklookstephen;
 				PRODUCT_NAME = QLStephen;
 				USER_HEADER_SEARCH_PATHS = No;

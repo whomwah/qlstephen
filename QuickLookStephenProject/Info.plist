@@ -8,40 +8,13 @@
 	<array>
 		<dict>
 			<key>CFBundleTypeName</key>
-			<string>PlainText</string>
+			<string>Content</string>
 			<key>CFBundleTypeRole</key>
 			<string>QLGenerator</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>public.unix-executable</string>
-			</array>
-			<key>LSTypeIsPackage</key>
-			<false/>
-			<key>NSPersistentStoreTypeKey</key>
-			<string>XML</string>
-		</dict>
-		<dict>
-			<key>CFBundleTypeName</key>
-			<string>com.apple.xcode.strings-text</string>
-			<key>CFBundleTypeRole</key>
-			<string>QLGenerator</string>
-			<key>LSItemContentTypes</key>
-			<array>
-				<string>com.apple.xcode.strings-text</string>
-			</array>
-			<key>LSTypeIsPackage</key>
-			<false/>
-			<key>NSPersistentStoreTypeKey</key>
-			<string>XML</string>
-		</dict>
-		<dict>
-			<key>CFBundleTypeName</key>
-			<string>public.unix-executable</string>
-			<key>CFBundleTypeRole</key>
-			<string>QLGenerator</string>
-			<key>LSItemContentTypes</key>
-			<array>
-				<string>public.unix-executable</string>
+				<string>public.data</string>
+				<string>public.content</string>
 			</array>
 			<key>LSTypeIsPackage</key>
 			<false/>

@@ -1,11 +1,12 @@
 # QuicklookStephen
 
-QLStephen is a QuickLook plugin that lets you view plain text files without a file extension. Files like:
+QLStephen is a QuickLook plugin that lets you view text files without their own dedicated QuickLook plugin. Files like:
 
     README
     INSTALL
     Capfile
     CHANGELOG
+    package.json
     etc...
 
 ## Installation
@@ -31,6 +32,20 @@ Compiling the project yourself? Run:
 
     make
     make install
+    
+## Permissions (Quarantine)
+
+If you run into issues with macOS not letting you run the plugin because it's not signed by a verified developer you can follow these steps:
+
+1. Install the plugin using one of the methods above
+1. run `xattr -cr ~/Library/QuickLook/QLStephen.qlgenerator` (sudo if needed)
+1. run `qlmanage -r`
+1. run `qlmanage -r cache`
+1. Restart Finder by...
+    -  Restarting your computer
+    -  or holding down the option key and right click on Finder’s dock icon, then select “Relaunch” from the menu
+
+For more disucssion on this you can read up on [#81](https://github.com/whomwah/qlstephen/issues/81) [starting here](https://github.com/whomwah/qlstephen/issues/81#issuecomment-582207278)
 
 ## Settings
 

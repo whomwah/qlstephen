@@ -15,16 +15,11 @@ QLStephen is a QuickLook plugin that lets you view text files without their own 
 
     brew cask install qlstephen
 
-### MacPorts
-
-    port install qlstephen
-
 ### Pre-compiled
 
 * [Download the latest version of QuickLookStephen](https://github.com/whomwah/qlstephen/releases)
 * Unzip
-* Copy the file into `/Library/QuickLook` or `~/Library/QuickLook`
-  (You can create the `QuickLook` folder if it doesn’t exist)
+* Copy the file into `~/Library/QuickLook` (You can create the `QuickLook` folder if it doesn’t exist)
 
 ### Manually Compiled
 

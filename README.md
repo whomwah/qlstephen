@@ -36,6 +36,7 @@ If you run into issues with macOS not letting you run the plugin because it's no
 1. run `xattr -cr ~/Library/QuickLook/QLStephen.qlgenerator` (sudo if needed)
 1. run `qlmanage -r`
 1. run `qlmanage -r cache`
+1. run `qlmanage -m` and look for the `public.data` line to make sure a different application's `qlgenerator` file hasn't taken precedence. (Not all `qlgenerator` files are in `~/Library/QuickLook/` or `/Library/QuickLook/`!)
 1. Restart Finder by...
     -  Restarting your computer
     -  or holding down the option key and right click on Finder’s dock icon, then select “Relaunch” from the menu

@@ -15,6 +15,7 @@
 			<array>
 				<string>public.data</string>
 				<string>public.content</string>
+				<string>public.unix-executable</string>
 			</array>
 			<key>LSTypeIsPackage</key>
 			<false/>

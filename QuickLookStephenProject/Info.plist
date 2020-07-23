@@ -16,6 +16,7 @@
 				<string>public.data</string>
 				<string>public.content</string>
 				<string>public.unix-executable</string>
+				<string>public.yaml</string>
 			</array>
 			<key>LSTypeIsPackage</key>
 			<false/>

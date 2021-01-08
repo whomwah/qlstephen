@@ -22,7 +22,10 @@ OSStatus GeneratePreviewForURL(void *thisInterface,
         [QLSFileAttributes attributesForItemAtURL:(__bridge NSURL *)url];
 
     if (!magicAttributes) {
-      NSLog(@"QLStephen: Could not determine attribtues of file %@", url);
+      // if the URL is for a .DS_Store file, don't bother with logging call
+      if (![[(__bridge NSURL *)url lastPathComponent] isEqualToString:@".DS_Store"]) {
+        NSLog(@"QLStephen: Could not determine attributes of file %@", [(__bridge NSURL *)url path]);
+      }
       return noErr;
     }
 
@@ -31,7 +34,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface,
     }
 
     if (magicAttributes.fileEncoding == kCFStringEncodingInvalidId) {
-      NSLog(@"QLStephen: Could not determine encoding of file %@", url);
+      NSLog(@"QLStephen: Could not determine encoding of file %@", [(__bridge NSURL *)url path]);
       return noErr;
     }
 

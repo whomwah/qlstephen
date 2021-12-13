@@ -13,7 +13,7 @@ QLStephen is a QuickLook plugin that lets you view text files without their own 
 
 ### Homebrew
 
-    brew cask install qlstephen
+    brew install qlstephen
 
 ### Pre-compiled
 

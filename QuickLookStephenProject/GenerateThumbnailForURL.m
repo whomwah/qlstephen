@@ -44,7 +44,7 @@ static NSString *ThumbnailBadgeForItemWithAttributes(
 
   // Do we have a file extension? If so, use it as a badge if it's not too
   // long.
-  if (![fileExtension isEqualToString:@""]) {
+  if (fileExtension.length) {
     badge = fileExtension;
 
     // Is the file extension too long to be reasonably displayed in a
@@ -62,13 +62,13 @@ static NSString *ThumbnailBadgeForItemWithAttributes(
   // have no file extension. file(1) might wrongly guess the MIME type, and it
   // would be annoying if the file extension were to say one thing and the
   // badge another.
-  if (!badge && [fileExtension isEqualToString:@""]) {
+  if (!badge && fileExtension.length == 0) {
     NSDictionary *map = mimeTypeToBadgeMap();
     badge = map[attributes.mimeType];
   }
   
   // Does the filename match a known pattern? If so, use the appropriate badge.
-  if (!badge && [fileExtension isEqualToString:@""]) {
+  if (!badge && fileExtension.length == 0) {
     NSDictionary *map = filenameRegexToBadgeMap();
     [map enumerateKeysAndObjectsUsingBlock:
       ^(NSString *pattern, NSString *candidateBadge, BOOL *stop) {
@@ -121,7 +121,10 @@ OSStatus GenerateThumbnailForURL(void *thisInterface,
         = [QLSFileAttributes attributesForItemAtURL:(__bridge NSURL *)url];
 
     if (!magicAttributes) {
-      NSLog(@"QLStephen: Could not determine attribtues of file %@", url);
+      // if the URL is for a .DS_Store file, don't bother with logging call
+      if (![[(__bridge NSURL *)url lastPathComponent] isEqualToString:@".DS_Store"]) {
+        NSLog(@"QLStephen: Could not determine attributes of file %@", [(__bridge NSURL *)url path]);
+      }
       return noErr;
     }
 
@@ -131,7 +134,7 @@ OSStatus GenerateThumbnailForURL(void *thisInterface,
     }
 
     if (magicAttributes.fileEncoding == kCFStringEncodingInvalidId) {
-      NSLog(@"QLStephen: Could not determine encoding of file %@", url);
+      NSLog(@"QLStephen: Could not determine encoding of file %@", [(__bridge NSURL *)url path]);
       return noErr;
     }
 

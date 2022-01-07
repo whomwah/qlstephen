@@ -9,6 +9,7 @@ debug:
 install:
 	@if [ -d  "./build/Release/QLStephen.qlgenerator" ]; then \
 		rm -rf ~/Library/QuickLook/QLStephen.qlgenerator ; \
+		mkdir -p ~/Library/QuickLook ; \
 		cp -r ./build/Release/QLStephen.qlgenerator ~/Library/QuickLook/ ; \
 		qlmanage -r ; \
 	else \

@@ -201,7 +201,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.whomwah.quicklookstephen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.quicklookstephen;
 				PRODUCT_NAME = QLStephen;
 				USER_HEADER_SEARCH_PATHS = No;
 				USE_HEADERMAP = NO;
@@ -219,7 +219,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.whomwah.quicklookstephen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.quicklookstephen;
 				PRODUCT_NAME = QLStephen;
 				USER_HEADER_SEARCH_PATHS = No;
 				USE_HEADERMAP = NO;
